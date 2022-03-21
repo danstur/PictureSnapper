@@ -1,0 +1,30 @@
+root = true
+
+[*]
+# Indentation and spacing
+indent_size = 4
+tab_width = 4
+indent_style = space
+trim_trailing_whitespace = true
+
+# New line preferences
+end_of_line = crlf
+insert_final_newline = true
+
+charset = utf-8
+
+[{*.props,*.csproj}]
+indent_size = 2
+indent_style = space
+
+[*.sln]
+# Necessary to make Visual Studio version selector to work.
+charset = utf-8-bom
+
+[*.json]
+indent_size = 2
+indent_style = space
+
+[nlog.config]
+indent_size = 2
+indent_style = space

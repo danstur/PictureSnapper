@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PictureSnapper": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
