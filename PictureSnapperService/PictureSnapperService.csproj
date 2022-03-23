@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -23,9 +23,11 @@
     <ProjectReference Include="..\PictureSnapper\PictureSnapper.vcxproj" />
   </ItemGroup>
 
-	<ItemGroup>
-		<PackageReference Include="System.CommandLine" Version="2.0.0-beta3.22114.1" />
-	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta3.22114.1" />
+    <PackageReference Include="System.CommandLine.Hosting" Version="0.4.0-alpha.22114.1" />
+    <!--<PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />-->
+  </ItemGroup>
 
   <ItemGroup>
     <NativePictureSnapperFiles Include="$(SolutionDir)x64\$(Configuration)\*.*" />
