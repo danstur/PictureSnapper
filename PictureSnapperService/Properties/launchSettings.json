@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "PictureSnapperService": {
+      "commandName": "Project",
+      "commandLineArgs": "--directory C:\\tmp\\images --interval 00:00:30",
+      "nativeDebugging": true
+    }
+  }
+}
