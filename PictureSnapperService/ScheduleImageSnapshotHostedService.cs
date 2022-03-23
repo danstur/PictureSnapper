@@ -1,10 +1,11 @@
-﻿using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using PictureSnapperService.Utility;
 using System.Runtime.InteropServices;
 
 namespace PictureSnapperService;
 
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1001:Types that own disposable fields should be disposable", Justification = "StopAsync")]
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1001:Types that own disposable fields should be disposable", Justification = "StopAsync cleans up timer.")]
 public sealed class ScheduleImageSnapshotHostedService : IHostedService
 {
     [DllImport("PictureSnapper.dll", ExactSpelling = true, SetLastError = false,

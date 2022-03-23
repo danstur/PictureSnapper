@@ -6,9 +6,6 @@ using System.CommandLine.NamingConventionBinder;
 
 namespace PictureSnapperService;
 
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "CA1812: Avoid uninstantiated internal classes", Justification = "Used via reflection.")]
-public sealed record CommandLineOptions(DirectoryInfo Directory, TimeSpan Interval);
-
 public static class Program
 {
     private static async Task Run(CommandLineOptions options)

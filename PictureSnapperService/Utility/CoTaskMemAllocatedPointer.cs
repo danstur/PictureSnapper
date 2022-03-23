@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace PictureSnapperService;
+namespace PictureSnapperService.Utility;
 
 public readonly struct CoTaskMemAllocatedPointer : IDisposable
 {
