@@ -3,3 +3,4 @@ obj/
 .vs/
 x64/
 external/
+**/*.user

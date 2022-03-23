@@ -1,0 +1,43 @@
+root = true
+
+[*]
+# Indentation and spacing
+indent_size = 4
+tab_width = 4
+indent_style = space
+trim_trailing_whitespace = true
+
+# New line preferences
+end_of_line = crlf
+insert_final_newline = true
+
+charset = utf-8
+
+[{*.props,*.csproj}]
+indent_size = 2
+indent_style = space
+
+[*.sln]
+# Necessary to make Visual Studio version selector to work.
+charset = utf-8-bom
+
+[*.json]
+indent_size = 2
+indent_style = space
+
+[nlog.config]
+indent_size = 2
+indent_style = space
+
+[*.cs]
+
+# CA1014: Mark assemblies with CLSCompliant: Simply no need for us.
+dotnet_diagnostic.CA1014.severity = none
+
+# CA1303: Do not pass literals as localized parameters. We'll localize the necessary parts anyhow.
+dotnet_diagnostic.CA1303.severity = none
+
+
+dotnet_diagnostic.CA1720.severity = none
+
+dotnet_diagnostic.CA1815.severity = none
