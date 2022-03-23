@@ -37,7 +37,21 @@ dotnet_diagnostic.CA1014.severity = none
 # CA1303: Do not pass literals as localized parameters. We'll localize the necessary parts anyhow.
 dotnet_diagnostic.CA1303.severity = none
 
-
 dotnet_diagnostic.CA1720.severity = none
 
 dotnet_diagnostic.CA1815.severity = none
+
+dotnet_diagnostic.CA1848.severity = none
+
+dotnet_diagnostic.CA2007.severity = none
+
+
+dotnet_naming_rule.private_members_with_underscore.symbols  = private_fields
+dotnet_naming_rule.private_members_with_underscore.style    = prefix_underscore
+dotnet_naming_rule.private_members_with_underscore.severity = suggestion
+
+dotnet_naming_symbols.private_fields.applicable_kinds           = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+
+dotnet_naming_style.prefix_underscore.capitalization = camel_case
+dotnet_naming_style.prefix_underscore.required_prefix = _
